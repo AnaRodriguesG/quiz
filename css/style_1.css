@@ -10,7 +10,6 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 126vh;
     display: flex;
     flex-direction: column;
     background-image: url('https://img.freepik.com/vetores-gratis/vetor-de-fundo-decorativo-de-textura-de-aquarela-colorida-suave_1055-13146.jpg');
@@ -18,9 +17,7 @@ body {
     backdrop-filter: blur(70px); 
     background-repeat: no-repeat;
 }
-main {
-    flex: 1;
-}
+
 
 header {
     height: 87px;
@@ -55,7 +52,7 @@ footer {
     width: 100%;
     background-color: #CEF1E8;
     color: var(--cor-font);
-    margin-top: auto;
+    margin-top: 105px;
 }
 p{
     font-family: "Londrina Solid", sans-serif;
@@ -71,13 +68,13 @@ p{
 }
 .forms{
     position: relative;
-    top: 10px;
+    top: 15px;
     border-radius: 75px;
     border: 1px solid #92C1B8;
     width: 400px;
     background-color: white;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
-    height: 700px;
+    height: 0 auto;
     left: 550px;
     text-align: center;
 }
@@ -99,24 +96,6 @@ p{
     margin-left: -300px;
     position: relative;
 }
-.Data{
-    font-family: "Sanchez", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    color: #000000;
-    margin-left: -230px;
-    position: relative;
-}
-.celular{
-    font-family: "Sanchez", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    color: #000000;
-    margin-left: -300px;
-    position: relative;
-}
 .senha{
     font-family: "Sanchez", serif;
     font-weight: 400;
@@ -126,7 +105,6 @@ p{
     margin-left: -300px;
     position: relative;
 }
-
 h2{
     font-family: "Sanchez", serif;
   font-weight: 400;
@@ -134,8 +112,8 @@ h2{
   font-size: 48px;
   color: #8EA9A4;
 }
-.nomeinp, #TipoEmail, #nascimento, .celularinp, .senhainp {
-    border-radius: 50px;
+.nomeinp, #TipoEmail {
+    border-radius: 10px;
     border: 1px solid #809F9A;
     width: 340px;
     background-color: #ECFFFA;
@@ -144,7 +122,15 @@ h2{
     position: relative;
     padding-left: 5px;
 }
-
+.senhainp{
+    border-radius: 10px;
+    border: 1px solid #809F9A;
+    width: 240px;
+    background-color: #ECFFFA;
+    height: 40px;
+    position: relative;
+    padding-left: 5px;   
+}
 ::placeholder{
     color: #000000;
     margin-left: 5px;
@@ -169,4 +155,12 @@ h2{
     left: 1480px;
     background-color: #A1C6BE;
     border-radius: 50%;
+}
+.escondesenha{
+    border-radius: 10px;
+    background-color: #A1C6BE;
+    border: 1px solid var(--cor-font);
+    width: 100px;
+    height: 40px;
+    padding-left: -10px;
 }

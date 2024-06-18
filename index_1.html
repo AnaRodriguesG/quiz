@@ -16,12 +16,8 @@
                 <ul class="menuside">
                     <li>
                         <a href="" class="trespt">
-                            <link rel="stylesheet" href="Login.html ">
                             <svg class="ptsvg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
                         </a>
-                            <ul>
-                                <!-- <li><a href="index_1.html">INÍCIO</a></li>- -->
-                            </ul> 
                     </li>
                 </ul>
             </nav>
@@ -36,33 +32,31 @@
             <label class="nome" for="username">Nome:</label>
             <br>
             <br>
-            <input  class="nomeinp" id="username" name="username" required placeholder="usuario@empresa">
+            <input  class="nomeinp" id="username" name="username" required placeholder="Nome">
 <br>
 <br>
             <label class="Email" for="TipoEmail">Email:</label>
             <br>
             <br>
-            <input type="emailinp" id="TipoEmail" placeholder="xxx@xxxxxxx.com.bt" required>
-<br>
-<br>
-
-            <label class="Data" for="nascimento">Data de nascimento:</label>
-            <br>
-            <br>
-            <input type="Datainpt" id="nascimento" placeholder=" xx/xx/xxxx" required>
-<br>
-<br> 
-            <label class="celular" for="celular">Celular :</label>
-            <br>
-            <br>
-            <input class="celularinp" id="celular" name="celular" placeholder="(+xx) xx xxxxx-xxxx " required>
+            <input type="emailinp" id="TipoEmail" placeholder="Seu melhor email" required>
 <br>
 <br>  
 
             <label class="senha" for="password">Senha:</label>
             <br>
             <br>
-            <input class="senhainp" id="password" name="senha" placeholder= "************" required>
+            <input class="senhainp" type="password" id="password" name="senha" placeholder="Digite sua senha" required><button class="escondesenha" type="button" id="togglePassword">Mostrar Senha</button>
+            
+            <script>
+              const togglePassword = document.getElementById('togglePassword');
+              const passwordField = document.getElementById('password');
+            
+              togglePassword.addEventListener('click', function() {
+                const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordField.setAttribute('type', type);
+                togglePassword.textContent = type === 'password' ? 'Mostrar Senha' : 'Ocultar Senha';
+              });
+            </script>
 <br>
 <br>
   

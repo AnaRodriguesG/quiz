@@ -131,4 +131,21 @@ h2{
     background-color: #A1C6BE;
     border-radius: 50%;
 }
+.escondesenha{
+    border-radius: 10px;
+    background-color: #A1C6BE;
+    border: 1px solid var(--cor-font);
+    width: 100px;
+    height: 40px;
+    padding-left: -10px;
+}
+.senhainp{
+    border-radius: 10px;
+    border: 1px solid #809F9A;
+    width: 240px;
+    background-color: #ECFFFA;
+    height: 40px;
+    position: relative;
+    padding-left: 5px;   
+}
 
