@@ -33,7 +33,7 @@ async function EntrarCadastro(username, password) {
         if (response.ok) {
             const data = await response.json();
             console.log("Login bem-sucedido:", data);
-            window.location.href = "index_2.html";
+            window.location.href = "login.html";
         } else {
             console.error('Credenciais inválidas');
             alert('Credenciais inválidas');
